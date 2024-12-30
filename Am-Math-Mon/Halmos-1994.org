@@ -61,7 +61,7 @@ first I graded.  He flunked, with no margin for error.
 
 #+CAPTION: Paul Halmos engaged in one of his favorite activities.
 #+NAME: fig:halmos-walking
-#+ATTR_HTML: :width 420px
+#+ATTR_HTML: :style max-width:420px;width:100%;
 [[file:Halmos-Walking.png]]
 
 Well, what about telling you what teaching is?  The more I tried to
@@ -226,7 +226,7 @@ and weaving) before we invented teachers.
 
 #+CAPTION: Paul Halmos.
 #+NAME: fig:halmos-teaching
-#+ATTR_HTML: :width 420px
+#+ATTR_HTML: :style max-width:500px;width:100%;
 [[file:Halmos-Teaching.png]]
 
 The method doesn’t begin by proving Theorem 1.  It begins with questions:
