@@ -1,0 +1,35 @@
+#disqus-identifier {
+    display: none;
+}
+
+#content, #postamble, #disqus_thread, table {
+  margin: 0 auto;
+}
+
+#content, #postamble, #disqus_thread {
+  max-width: 720px;
+}
+
+#content > p {
+  text-align: justify;
+}
+
+#content {
+  font-family: Palatino Linotype, Palatino, Times New Roman, Times, serif;
+  font-feature-settings: "dlig", "onum";
+  font-size: 1.4em;
+}
+
+#postamble {
+    margin-top: 1.2em;
+}
+
+@media (max-width: 1366px) {
+    #content, #postamble, #disqus_thread {
+        max-width: 768px;
+    }
+}
+
+th.org-left {
+    text-align: left;
+}
