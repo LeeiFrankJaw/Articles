@@ -11,6 +11,7 @@ if luatexja.jfont.jfm_feature then
     is_km = luatexja.jfont.jfm_feature.kaiming
     is_hc = luatexja.jfont.jfm_feature.hwcl
     is_fz = luatexja.jfont.jfm_feature.fzpr
+    is_otf = luatexja.jfont.jfm_feature.otf
 end
 
 if is_hc then
@@ -184,15 +185,15 @@ luatexja.jfont.define_jfm {
     },
     [22] = {
         chars = {'：'},
-        align = is_vt and is_qj and 'middle' or 'left',
-        left = is_vt and is_qj and is_hc and -0.275 or 0,
-        down = is_vt and is_qj and is_hc and 0.25 or 0,
-        width = is_vt and (is_hc and is_km and 0.5 or 1) or 0.5,
+        align = 'left',
+        left = 0,
+        down = is_vt and is_qj and is_otf and 0.5 or 0,
+        width = is_vt and (is_hc and 0.5 or 1) or 0.5,
         height = is_vt and 0.5 or 0.88,
         depth = is_vt and 0.5 or 0.12,
         italic = 0,
         glue = {
-            [0] = is_vt and (is_hc and is_km and aki(0.5) or {}) or aki(is_qj and 0.5 or 1),
+            [0] = is_vt and (is_hc and aki(0.5) or {}) or aki(is_qj and 0.5 or 1),
             [1] = is_vt and (is_hc and aki(0.5) or {}) or aki(0.5),
             [10] = is_vt and (is_hc and aki(0.5) or {}) or aki(0.5),
             [3] = is_vt and (is_hc and aki(0.5) or aki(0.25, 1)) or aki(0.5),
@@ -224,15 +225,15 @@ luatexja.jfont.define_jfm {
     },
     [24] = {
         chars = {'；'},
-        align = is_vt and is_qj and 'middle' or 'left',
-        left = is_vt and is_qj and is_hc and -0.2 or 0,
-        down = is_vt and is_qj and is_hc and 0.25 or 0,
-        width = is_vt and (is_hc and is_km and 0.5 or 1) or 0.5,
+        align = 'left',
+        left = 0,
+        down = is_vt and is_qj and is_otf and 0.5 or 0,
+        width = is_vt and (is_hc and 0.5 or 1) or 0.5,
         height = is_vt and 0.5 or 0.88,
         depth = is_vt and 0.5 or 0.12,
         italic = 0,
         glue = {
-            [0] = is_vt and (is_hc and is_km and aki(0.5) or {}) or aki(is_qj and 0.5 or 1),
+            [0] = is_vt and (is_hc and aki(0.5) or {}) or aki(is_qj and 0.5 or 1),
             [1] = is_vt and (is_hc and aki(0.5) or {}) or aki(0.5),
             [10] = is_vt and (is_hc and aki(0.5) or {}) or aki(0.5),
             [3] = is_vt and (is_hc and aki(0.5) or aki(0.25, 1)) or aki(0.5),
